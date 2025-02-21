@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Exception handling function
 def handle_exception(e):
@@ -15,7 +17,7 @@ app.register_error_handler(Exception, handle_exception)
 @app.route('/')
 def home():
     """Home route to check if the API is working."""
-    return jsonify({"message": "API is working!"}), 200
+    return jsonify({"message": "Hii Shivansh, API is working!"}), 200
 
 @app.route('/bfhl', methods=['POST'])
 def bfhl_post():
