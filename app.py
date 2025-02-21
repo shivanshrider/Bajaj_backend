@@ -45,9 +45,9 @@ def bfhl_post():
         # Prepare the response
         response = {
             "is_success": True,
-            "user_id": "john_doe_17091999",  # Replace with dynamic logic if needed
-            "email": "john@xyz.com",         # Replace with dynamic logic if needed
-            "roll_number": "ABCD123",        # Replace with dynamic logic if needed
+            "user_id": "22bcs10784_Shivansh",  # Replace with dynamic logic if needed
+            "email": "22bcs10784@cuchd.in",         # Replace with dynamic logic if needed
+            "roll_number": "22bcs10784",        # Replace with dynamic logic if needed
             "numbers": numbers,
             "alphabets": alphabets,
             "highest_alphabet": [highest_alphabet] if highest_alphabet else []
